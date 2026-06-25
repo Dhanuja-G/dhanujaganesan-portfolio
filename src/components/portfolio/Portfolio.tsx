@@ -108,18 +108,13 @@ function IdentityConsole() {
               </div>
             </div>
 
-            {/* Right: avatar console */}
-            <div className="relative">
-              <div className="glass-card rounded-2xl p-5 h-full flex flex-col">
-                <div className="relative flex-1 grid place-items-center min-h-[260px]">
-                  <div className="absolute inset-4 rounded-2xl border border-[var(--glass-border)] [background:var(--gradient-radial-glow)]" />
-                  <img
-                    src={avatar}
-                    alt="Dhanuja G avatar"
-                    className="relative h-56 w-56 object-cover rounded-2xl"
-                  />
-                </div>
-              </div>
+            {/* Right: avatar */}
+            <div className="relative flex items-center justify-center">
+              <img
+                src={avatar}
+                alt="Dhanuja G avatar"
+                className="relative h-72 w-72 object-contain drop-shadow-[0_10px_40px_rgba(192,192,192,0.25)]"
+              />
             </div>
 
           </div>
