@@ -73,19 +73,10 @@ function IdentityConsole() {
                 </motion.span>
               </div>
 
-              <p className="text-muted-foreground leading-relaxed mb-4 max-w-2xl">
-                I am a Full Stack Developer passionate about building complete web
-                applications that combine strong frontend experiences with efficient
-                backend systems. With a solid foundation in JavaScript, Node.js,
-                Express.js, and database technologies, I focus on creating scalable,
-                user-centric solutions.
-              </p>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-2xl">
-                Currently pursuing Artificial Intelligence and Machine Learning at
-                SNS College of Technology, I continuously expand my knowledge by
-                blending software engineering practices with problem-solving skills.
-                My goal is to contribute to impactful software products and grow into
-                a highly skilled software engineer.
+                Full Stack Developer building scalable web apps with the MERN stack.
+                Currently pursuing AI &amp; ML at SNS College of Technology — blending
+                engineering with problem-solving to ship impactful products.
               </p>
 
               <div className="flex flex-wrap gap-3">
