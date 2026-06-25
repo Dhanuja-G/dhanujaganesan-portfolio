@@ -203,8 +203,8 @@ const timelineNodes = [
     tag: "Projects",
     title: "Shipped Applications",
     sub: "End-to-end products across web & AI",
-    meta: "3 launched",
-    items: ["ECART Website", "Focus Master", "AI Recipe Generator"],
+    meta: "5 launched",
+    items: ["Focus Master", "AI Recipe Generator", "Election Campaign", "FlashLearn", "Expense Flow"],
   },
 ];
 
