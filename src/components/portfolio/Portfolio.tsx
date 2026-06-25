@@ -368,7 +368,7 @@ const projects = [
 function ProjectLab() {
   const [hover, setHover] = useState<number | null>(null);
   return (
-    <Block id="lab" code="05" title="Project Lab" subtitle="Experiments shipped to production">
+    <Block id="lab" code="05" title="Projects" subtitle="Experiments shipped to production">
       <div className="grid lg:grid-cols-3 gap-6">
         {projects.map((p, i) => (
           <motion.article
