@@ -427,7 +427,7 @@ const vaultItems = [
   { icon: Briefcase, label: "Internships", value: "03", note: "Industry programs" },
   { icon: FolderGit2, label: "Projects", value: "03", note: "Shipped & live" },
   { icon: Award, label: "Azure AI", value: "AI-900", note: "Microsoft Certified" },
-  { icon: Award, label: "Java Cert", value: "OCJP", note: "Java certification" },
+  { icon: Award, label: "Volleyball", value: "District", note: "School-level player" },
 ];
 
 function AchievementsVault() {
