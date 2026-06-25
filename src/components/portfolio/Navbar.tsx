@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { Menu, X, Terminal } from "lucide-react";
 
 const links = [
-  { href: "#identity", label: "Identity" },
-  { href: "#dna", label: "DNA" },
-  { href: "#timeline", label: "Timeline" },
-  { href: "#matrix", label: "Matrix" },
-  { href: "#lab", label: "Lab" },
-  { href: "#vault", label: "Vault" },
-  { href: "#hub", label: "Hub" },
+  { href: "#identity", label: "Home" },
+  { href: "#dna", label: "About" },
+  { href: "#matrix", label: "Skills" },
+  { href: "#lab", label: "Projects" },
+  { href: "#timeline", label: "Experience" },
+  { href: "#vault", label: "Achievements" },
+  { href: "#hub", label: "Contact" },
 ];
 
 export function Navbar() {
