@@ -558,9 +558,6 @@ function AchievementsVault() {
                 </h3>
                 <p className="text-sm text-muted-foreground mt-1">{c.provider}</p>
               </div>
-              <span className="hidden sm:inline-flex font-mono text-[10px] uppercase tracking-widest text-[#C0C0C0]/80 px-3 py-1 rounded-md border border-[var(--glass-border)] glass-strong">
-                cert.{String(i + 1).padStart(2, "0")}
-              </span>
             </div>
           </motion.div>
         ))}
