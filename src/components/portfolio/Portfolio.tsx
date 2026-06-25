@@ -265,11 +265,11 @@ function TimelineGrid() {
 /* -------------------------------------------------------- */
 
 const skillGroups = [
-  { icon: Code2, name: "Languages", skills: ["JavaScript", "TypeScript", "Java", "Python", "C"] },
-  { icon: Layers, name: "Frontend", skills: ["React", "HTML5", "CSS3", "Tailwind", "Bootstrap"] },
-  { icon: Server, name: "Backend", skills: ["Node.js", "Express.js", "REST APIs"] },
-  { icon: Database, name: "Database", skills: ["MongoDB", "MySQL", "Firebase"] },
-  { icon: Wrench, name: "Tools", skills: ["Git", "GitHub", "VS Code", "Postman", "Azure"] },
+  { icon: Code2, name: "Programming Languages", skills: ["Java", "JavaScript", "Python", "C"] },
+  { icon: Layers, name: "Frontend Development", skills: ["HTML5", "CSS3", "Bootstrap", "React.js"] },
+  { icon: Server, name: "Backend Development", skills: ["Node.js", "Express.js"] },
+  { icon: Database, name: "Databases", skills: ["MongoDB", "MySQL"] },
+  { icon: Wrench, name: "Tools & Platforms", skills: ["Git", "GitHub", "VS Code", "Postman"] },
 ];
 
 function SkillMatrix() {
