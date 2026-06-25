@@ -355,7 +355,7 @@ const skillGroups = [
 
 function SkillMatrix() {
   return (
-    <Block id="matrix" code="04" title="Skill Matrix" subtitle="An interconnected network">
+    <Block id="matrix" code="04" title="Skills" subtitle="An interconnected network">
       <div className="grid lg:grid-cols-5 gap-4">
         {skillGroups.map((g, i) => (
           <motion.div
