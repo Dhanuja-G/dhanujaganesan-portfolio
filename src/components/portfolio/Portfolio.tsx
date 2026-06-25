@@ -230,9 +230,6 @@ function EducationArchive() {
                   <GraduationCap className="h-5 w-5 text-[#C0C0C0]" />
                 </span>
                 <div>
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                    edu.{String(i + 1).padStart(2, "0")}
-                  </span>
                   <h3 className="font-display text-lg font-bold text-white leading-tight">
                     {e.school}
                   </h3>
@@ -253,16 +250,6 @@ function EducationArchive() {
                 {e.period}
               </span>
               <span className="font-mono text-[11px] text-[#C0C0C0] px-2 py-1">{e.score}</span>
-            </div>
-            <div className="flex flex-wrap gap-1.5 relative">
-              {e.tags.map((t) => (
-                <span
-                  key={t}
-                  className="px-2 py-0.5 rounded-md glass-strong text-[10px] font-mono text-white/90 border border-[var(--glass-border)]"
-                >
-                  {t}
-                </span>
-              ))}
             </div>
           </motion.div>
         ))}
