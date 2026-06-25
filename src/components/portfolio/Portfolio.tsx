@@ -571,10 +571,10 @@ function ConnectHub() {
         {/* Quick links */}
         <div className="space-y-3">
           {[
-            { icon: Github, label: "GitHub", value: "github.com/dhanuja", href: "https://github.com" },
-            { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/dhanuja", href: "https://linkedin.com" },
-            { icon: Mail, label: "Email", value: "dhanuja@example.com", href: "mailto:dhanuja@example.com" },
-            { icon: Phone, label: "Phone", value: "+91 00000 00000", href: "tel:+910000000000" },
+            { icon: Github, label: "GitHub", value: "github.com/Dhanuja-G", href: "https://github.com/Dhanuja-G" },
+            { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/dhanuja-ganesan", href: "https://linkedin.com/in/dhanuja-ganesan/" },
+            { icon: Mail, label: "Email", value: "dhanuja346@gmail.com", href: "mailto:dhanuja346@gmail.com" },
+            { icon: Phone, label: "Phone", value: "+91 91507 30711", href: "tel:+919150730711" },
             { icon: MapPin, label: "Location", value: "Tamil Nadu, India", href: "#" },
           ].map((l) => (
             <a
