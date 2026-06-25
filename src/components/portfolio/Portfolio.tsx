@@ -50,13 +50,6 @@ function IdentityConsole() {
           <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8 p-6 sm:p-10">
             {/* Left: identity */}
             <div>
-              <div className="flex items-center gap-2 mb-5">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
-                  Developer · Online
-                </span>
-              </div>
-
               <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] mb-3">
                 Dhanuja <span className="text-silver-gradient">G</span>
                 <span className="text-[#C0C0C0]">.</span>
@@ -64,6 +57,7 @@ function IdentityConsole() {
               <p className="font-mono text-sm text-muted-foreground mb-6">
                 &gt; Full Stack Developer
               </p>
+
 
               {/* Dynamic line */}
               <div className="glass-card rounded-xl px-4 py-3 mb-6 inline-flex items-center gap-3 min-h-[48px]">
@@ -117,12 +111,6 @@ function IdentityConsole() {
             {/* Right: avatar console */}
             <div className="relative">
               <div className="glass-card rounded-2xl p-5 h-full flex flex-col">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                    profile.module
-                  </span>
-                  <Cpu className="h-4 w-4 text-[#C0C0C0]" />
-                </div>
                 <div className="relative flex-1 grid place-items-center min-h-[260px]">
                   <div className="absolute inset-4 rounded-2xl border border-[var(--glass-border)] [background:var(--gradient-radial-glow)]" />
                   <img
@@ -131,20 +119,9 @@ function IdentityConsole() {
                     className="relative h-56 w-56 object-cover rounded-2xl"
                   />
                 </div>
-                <div className="mt-4 grid grid-cols-3 gap-2 text-center font-mono text-[10px]">
-                  {[
-                    { k: "ROLE", v: "FS DEV" },
-                    { k: "STACK", v: "MERN" },
-                    { k: "FOCUS", v: "AI/ML" },
-                  ].map((s) => (
-                    <div key={s.k} className="glass-card rounded-lg py-2">
-                      <div className="text-muted-foreground">{s.k}</div>
-                      <div className="text-white">{s.v}</div>
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
