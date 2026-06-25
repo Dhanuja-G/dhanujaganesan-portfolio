@@ -512,48 +512,52 @@ function ProjectLab() {
 /*  BLOCK 6 — ACHIEVEMENTS VAULT (rotating cube cards)      */
 /* -------------------------------------------------------- */
 
-const vaultItems = [
-  { icon: Award, label: "Azure AI Fundamentals", value: "AI-900", note: "Microsoft Certified" },
-  { icon: Award, label: "Full Stack Development", value: "MERN", note: "Certified Program" },
-  { icon: Award, label: "Java Programming", value: "Core", note: "Certification" },
-  { icon: Award, label: "Python Essentials", value: "Cert", note: "Certification" },
+const certifications = [
+  { title: "Microsoft Azure AI Fundamentals", provider: "Microsoft" },
+  { title: "Java Certification", provider: "Infosys Springboard" },
+  { title: "Introduction to IoT", provider: "NPTEL" },
+  { title: "C Programming", provider: "PrepInsta" },
 ];
 
 function AchievementsVault() {
   return (
-    <Block id="vault" code="06" title="Certifications" subtitle="Verified credentials">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        {vaultItems.map((it, i) => (
+    <Block
+      id="vault"
+      code="06"
+      title="Certifications"
+      subtitle="Continuous learning and professional growth"
+    >
+      <div className="flex flex-col gap-5">
+        {certifications.map((c, i) => (
           <motion.div
-            key={it.label}
-            initial={{ opacity: 0, rotateY: -20 }}
-            whileInView={{ opacity: 1, rotateY: 0 }}
+            key={c.title}
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.08 }}
-            className="group [perspective:1000px]"
+            transition={{ delay: i * 0.08, duration: 0.5 }}
+            whileHover={{ y: -4 }}
+            className="group relative overflow-hidden rounded-3xl border border-[var(--glass-border)] glass-strong p-6 sm:p-7 silver-glow-hover transition-all duration-500"
           >
-            <div className="relative h-44 [transform-style:preserve-3d] transition-transform duration-700 group-hover:[transform:rotateY(180deg)]">
-              {/* front */}
-              <div className="absolute inset-0 glass-strong rounded-2xl border border-[var(--glass-border)] p-5 flex flex-col justify-between [backface-visibility:hidden]">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                    vault.{String(i + 1).padStart(2, "0")}
-                  </span>
-                  <it.icon className="h-4 w-4 text-[#C0C0C0]" />
-                </div>
-                <div>
-                  <div className="font-display text-4xl font-bold text-silver-gradient">
-                    {it.value}
-                  </div>
-                  <div className="text-sm text-white mt-1">{it.label}</div>
-                </div>
+            {/* silver gradient overlay */}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/[0.06] via-transparent to-[#C0C0C0]/[0.04]" />
+            {/* light reflection sweep */}
+            <div className="pointer-events-none absolute -inset-y-10 -left-1/3 w-1/3 rotate-12 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:translate-x-[400%] transition-all duration-1000 ease-out" />
+            {/* soft glow blob */}
+            <div className="pointer-events-none absolute -top-16 -right-16 h-44 w-44 rounded-full bg-[#C0C0C0]/10 blur-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+
+            <div className="relative flex items-center gap-5">
+              <span className="h-12 w-12 shrink-0 rounded-xl glass-strong border border-[var(--glass-border)] grid place-items-center">
+                <Award className="h-5 w-5 text-[#C0C0C0]" />
+              </span>
+              <div className="min-w-0 flex-1">
+                <h3 className="font-display text-lg sm:text-xl font-bold text-white leading-tight truncate">
+                  {c.title}
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1">{c.provider}</p>
               </div>
-              {/* back */}
-              <div className="absolute inset-0 glass-card rounded-2xl border border-[var(--glass-border)] p-5 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <it.icon className="h-8 w-8 text-[#C0C0C0] mb-3" />
-                <div className="font-display font-bold text-white">{it.label}</div>
-                <div className="text-xs text-muted-foreground mt-1">{it.note}</div>
-              </div>
+              <span className="hidden sm:inline-flex font-mono text-[10px] uppercase tracking-widest text-[#C0C0C0]/80 px-3 py-1 rounded-md border border-[var(--glass-border)] glass-strong">
+                cert.{String(i + 1).padStart(2, "0")}
+              </span>
             </div>
           </motion.div>
         ))}
