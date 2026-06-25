@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/glass-lux-portfolio/",
+  base: "/dhanujaganesan-portfolio/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

@@ -578,6 +578,10 @@ function AchievementsVault() {
 function ConnectHub() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
+  useEffect(() => {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  }, []);
+
   async function handleContactSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
