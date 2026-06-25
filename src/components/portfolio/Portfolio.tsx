@@ -721,7 +721,8 @@ export function Portfolio() {
       <main>
         <IdentityConsole />
         <DeveloperDNA />
-        <TimelineGrid />
+        <EducationArchive />
+        <ExperienceArchive />
         <SkillMatrix />
         <ProjectLab />
         <AchievementsVault />
